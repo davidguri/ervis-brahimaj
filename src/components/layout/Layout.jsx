@@ -15,11 +15,11 @@ export default function Layout(props) {
     };
 
     const onEnterLink = ({ currentTarget }) => {
-        gsap.to(currentTarget, { color: "rgb(154, 193, 196)" });
+        gsap.to(currentTarget, { textDecoration: "underline" });
     };
 
     const onLeaveLink = ({ currentTarget }) => {
-        gsap.to(currentTarget, { color: "black" });
+        gsap.to(currentTarget, { textDecoration: "none" });
     };
 
     return (
@@ -81,24 +81,24 @@ export default function Layout(props) {
                         <div className={styles.linkContainer}>
                             <div className={styles.linkColumn}>
                                 <p className={styles.columnTitle}>Title</p>
-                                <Link to="/about" className={styles.columnLink}>About</Link>
-                                <Link to="/about" className={styles.columnLink}>About</Link>
-                                <Link to="/about" className={styles.columnLink}>About</Link>
-                                <Link to="/about" className={styles.columnLink}>About</Link>
+                                <Link to="/about" className={styles.columnLink} onMouseEnter={onEnterLink} onMouseLeave={onLeaveLink}>About</Link>
+                                <Link to="/about" className={styles.columnLink} onMouseEnter={onEnterLink} onMouseLeave={onLeaveLink}>About</Link>
+                                <Link to="/about" className={styles.columnLink} onMouseEnter={onEnterLink} onMouseLeave={onLeaveLink}>About</Link>
+                                <Link to="/about" className={styles.columnLink} onMouseEnter={onEnterLink} onMouseLeave={onLeaveLink}>About</Link>
                             </div>
                             <div className={styles.linkColumn}>
                                 <p className={styles.columnTitle}>Title</p>
-                                <Link to="/about" className={styles.columnLink}>About</Link>
-                                <Link to="/about" className={styles.columnLink}>About</Link>
-                                <Link to="/about" className={styles.columnLink}>About</Link>
-                                <Link to="/about" className={styles.columnLink}>About</Link>
+                                <Link to="/about" className={styles.columnLink} onMouseEnter={onEnterLink} onMouseLeave={onLeaveLink}>About</Link>
+                                <Link to="/about" className={styles.columnLink} onMouseEnter={onEnterLink} onMouseLeave={onLeaveLink}>About</Link>
+                                <Link to="/about" className={styles.columnLink} onMouseEnter={onEnterLink} onMouseLeave={onLeaveLink}>About</Link>
+                                <Link to="/about" className={styles.columnLink} onMouseEnter={onEnterLink} onMouseLeave={onLeaveLink}>About</Link>
                             </div>
                             <div className={styles.linkColumn}>
                                 <p className={styles.columnTitle}>Title</p>
-                                <Link to="/about" className={styles.columnLink}>About</Link>
-                                <Link to="/about" className={styles.columnLink}>About</Link>
-                                <Link to="/about" className={styles.columnLink}>About</Link>
-                                <Link to="/about" className={styles.columnLink}>About</Link>
+                                <Link to="/about" className={styles.columnLink} onMouseEnter={onEnterLink} onMouseLeave={onLeaveLink}>About</Link>
+                                <Link to="/about" className={styles.columnLink} onMouseEnter={onEnterLink} onMouseLeave={onLeaveLink}>About</Link>
+                                <Link to="/about" className={styles.columnLink} onMouseEnter={onEnterLink} onMouseLeave={onLeaveLink}>About</Link>
+                                <Link to="/about" className={styles.columnLink} onMouseEnter={onEnterLink} onMouseLeave={onLeaveLink}>About</Link>
                             </div>
                         </div>
                     </div>

@@ -31,7 +31,7 @@ const router = createBrowserRouter([
     {
         path: "/treatments",
         element: <Treatments />,
-        children: []
+        children: [/* This is where all the diff types of treatments go. */]
     }
 ]);
 
