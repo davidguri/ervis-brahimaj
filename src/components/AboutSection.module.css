@@ -20,13 +20,13 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  width: 30%;
+  width: 35%;
 }
 
 .title {
   font-weight: 800;
-  font-size: 42px;
-  padding-bottom: 12px;
+  font-size: 68px;
+  padding-bottom: 15px;
 }
 
 .paragraph {
@@ -35,22 +35,52 @@
 }
 
 .cardContainer {
-  width: 55%;
+  width: 50%;
 }
 
 .column {
   float: left;
-  width: 33.33%;
+  width: 47.5%;
+  margin: 10px;
 }
 
 .row:after {
   content: "";
   display: table;
   clear: both;
+  justify-content: center;
+  align-items: center;
 }
 
 @media screen and (max-width: 600px) {
+  .treatmentsSection {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .titleContainer {
+    text-align: center;
+    width: 95%;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .cardContainer {
+    width: 100%;
+  }
+
   .column {
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .column {
+    width: 100%;
+  }
+
+  .titleContainer {
+    text-align: center;
   }
 }

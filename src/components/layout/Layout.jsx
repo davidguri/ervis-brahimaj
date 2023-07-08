@@ -2,6 +2,9 @@ import { gsap } from "gsap";
 import styles from "./Layout.module.css";
 import { Link } from "react-router-dom";
 
+import { IonIcon } from "@ionic/react";
+import { LocationSharp } from "react-ionicons";
+
 import Logo from "../../assets/images/Ervis Brahimaj Logo Dark.png"
 
 export default function Layout(props) {
@@ -27,11 +30,11 @@ export default function Layout(props) {
             <section className={styles.nav}>
                 <section className={styles.contactBar}>
                     <div className={styles.leftContainer}>
-                        <p className={styles.contactText} >Rruga Lorem Ipsum, Tirana, Albania</p>
+                        <p className={styles.contactText}><IonIcon icon={LocationSharp}/> Rruga Lorem Ipsum, Tirana, Albania</p>
                     </div>
                     <div className={styles.rightContainer}>
                         <div className={styles.numberContainer}>
-                            <p className={styles.contactText} >+355 69 420 6969</p>
+                            <p className={styles.contactText}>+355 69 420 6969</p>
                         </div>
                         <div className={styles.iconContainer}>
                             Some icons

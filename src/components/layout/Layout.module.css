@@ -47,6 +47,9 @@
   font-weight: 500;
   padding: 0;
   margin: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .navigationBar {
@@ -162,4 +165,33 @@
 
 .legalText {
   font-size: 12px;
+}
+
+@media screen and (max-width: 900px) {
+  .contactText {
+    font-size: 12px;
+  }
+
+  .logo {
+    height: 60px;
+  }
+
+  .link {
+    font-size: 14px;
+    font-weight: 600;
+    padding-inline: 12px;
+  }
+
+  .ctaButton {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-left: 12px;
+  }
+
+  .ctaLink {
+    font-size: 14px;
+    font-weight: 600;
+  }
 }
