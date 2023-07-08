@@ -1,0 +1,56 @@
+.main {
+  color: black;
+  background-color: white;
+  width: 85%;
+  padding-inline: 7.5%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-top: 5%;
+}
+
+.treatmentsSection {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.titleContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 30%;
+}
+
+.title {
+  font-weight: 800;
+  font-size: 42px;
+  padding-bottom: 12px;
+}
+
+.paragraph {
+  font-size: 21px;
+  font-weight: 500;
+}
+
+.cardContainer {
+  width: 55%;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}

@@ -1,0 +1,7 @@
+.main {
+  color: white;
+  background-color: rgb(154, 193, 196);
+  box-shadow: 0 5px 12px rgb(0 0 0 / 0.3);
+  border-radius: 25px;
+  padding: 20px;
+}

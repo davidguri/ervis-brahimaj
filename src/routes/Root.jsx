@@ -5,10 +5,9 @@ import { useState } from "react";
 
 import Layout from "../components/layout/Layout";
 import Hero from "../assets/images/heroImage.png";
+import AboutSection from "../components/AboutSection";
 
-import { CaretDown } from "react-ionicons"
-
-export default function Root() {
+export default function Root() { 
 
     // animation stuff
     const onEnterButton = ({ currentTarget }) => {
@@ -47,7 +46,7 @@ export default function Root() {
                 <div className={styles.leftContainer}>
                     <div className={styles.titleContainer}>
                         <text className={styles.title}>DR<span className={styles.smallerText}>.</span> ERVIS<br />BRAHIMAJ</text><br />
-                        <text className={styles.subtitle}>Helping patients with<br /><span className={styles.specialText} onClick={toggle}>{selected} <CaretDown color="#9ac1c4" height="45px" width="45px" /></span></text>
+                        <text className={styles.subtitle}>Helping patients with<br /><span className={styles.specialText} onClick={toggle}>{selected}</span></text>
                         <div className={styles.itemContainer}>
                             {active && availableTreatmentNames.map((item, i) => {
                                 return (
@@ -66,9 +65,10 @@ export default function Root() {
                     </div>
                 </div>
                 <div className={styles.rightContainer}>
-                    <img url={Hero} alt="HeroImg" className={styles.image} />
+                    <img src={Hero} alt="HeroImg" className={styles.image} />
                 </div>
             </main>
+            <AboutSection />
         </Layout>
     );
 }

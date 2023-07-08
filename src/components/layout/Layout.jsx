@@ -46,9 +46,6 @@ export default function Layout(props) {
                     </div>
                     <div className={styles.rightContainer}>
                         <div className={styles.linkContainer}>
-                            <Link to="/about" className={styles.link} onMouseEnter={onEnterLink} onMouseLeave={onLeaveLink}>
-                                About
-                            </Link>
                             <Link to="/treatments" className={styles.link} onMouseEnter={onEnterLink} onMouseLeave={onLeaveLink}>
                                 Treatments
                             </Link>
@@ -105,7 +102,7 @@ export default function Layout(props) {
                 </div>
             </section>
             <div className={styles.legal}>
-                Legal Copyright Stuff (c)
+                <text className={styles.legalText}>Legal Copyright Stuff &#169;</text>
             </div>
         </main>
     );

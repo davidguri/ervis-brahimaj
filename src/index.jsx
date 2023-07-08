@@ -4,7 +4,6 @@ import "./index.css";
 
 import Root from "./routes/Root";
 import Treatments from "./routes/Treatments";
-import About from "./routes/About";
 import Faq from "./routes/Faq";
 
 import ErrorPage from "./error-page";
@@ -19,10 +18,6 @@ const router = createBrowserRouter([
         path: "/",
         element: <Root />,
         errorElement: <ErrorPage />
-    },
-    {
-        path: "/about",
-        element: <About />,
     },
     {
         path: "/faq",
