@@ -111,6 +111,10 @@
   .title {
     font-size: 75px;
   }
+
+  .ctaButton {
+    width: 45%;
+  }
 }
 
 @media screen and (max-width: 900px) {
@@ -144,21 +148,22 @@
 
   .titleContainer {
     text-align: center;
+    align-items: center;
   }
 
   .title {
-    font-size: 90px;
+    font-size: 64px;
   }
 
   .subtitle {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 32px;
+    font-size: 30px;
   }
 
   .itemContainer {
-    width: 35%;
+    width: 25%;
   }
 
   .ctaButton {
@@ -167,10 +172,10 @@
     padding-left: 35px;
     padding-right: 35px;
     margin-top: 21px;
-    width: 35%;
+    width: 40%;
   }
 
   .image {
-    max-width: 50%;
+    max-width: 49%;
   }
 }

@@ -29,8 +29,23 @@ export default function Root() {
     ];
 
     const [active, setActive] = useState(false);
-    const toggle = () => setActive(!active);
 
+    const [states] = useState({
+        initialState: 0,
+        finalState: 20,
+    })
+
+    const [padding, setPadding] = useState(states.initialState);
+
+    const toggle = () => {
+        setActive(!active)
+        if (padding !== states.finalState) {
+            setPadding(states.finalState)
+        } else {
+            setPadding(states.initialState)
+        }
+    };
+    
     const [selected, setSelected] = useState("select issue...");
 
     const handleItemClick = (item) => {
@@ -47,17 +62,19 @@ export default function Root() {
                     <div className={styles.titleContainer}>
                         <text className={styles.title}>DR<span className={styles.smallerText}>.</span> ERVIS<br />BRAHIMAJ</text><br />
                         <text className={styles.subtitle}>Helping patients with<br /><span className={styles.specialText} onClick={toggle}>{selected}</span></text>
-                        <div className={styles.itemContainer}>
-                            {active && availableTreatmentNames.map((item, i) => {
-                                return (
-                                    <div
-                                        key={i}
-                                        onClick={() => handleItemClick(item)}
-                                    >
-                                        <text className={styles.item}>{item}</text>
-                                    </div>
-                                )
-                            })}
+                        <div style={{backgroundColor: "rgb(154, 193, 196)", display: `${active}`, borderRadius: 50, padding: `${padding}`, width: "35%"}}>
+                            <div className={styles.itemContainer}>
+                                {active && availableTreatmentNames.map((item, i) => {
+                                    return (
+                                        <div
+                                            key={i}
+                                            onClick={() => handleItemClick(item)}
+                                        >
+                                            <text className={styles.item}>{item}</text>
+                                        </div>
+                                    )
+                                })}
+                            </div>
                         </div>
                     </div>
                     <div className={styles.ctaButton} onMouseEnter={onEnterButton} onMouseLeave={onLeaveButton}>

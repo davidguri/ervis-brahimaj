@@ -1,7 +1,12 @@
+import styles from "./Faq.module.css";
+import Layout from "../components/layout/Layout";
+
 export default function Faq() {
     return (
-        <main>
-            Faq
-        </main>
+        <Layout>
+            <main className={styles.main}>
+                Faq
+            </main>
+        </Layout>
     );
 }
