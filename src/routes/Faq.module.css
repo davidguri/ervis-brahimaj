@@ -1,4 +1,34 @@
 .main {
-  border: 1px solid red;
   color: black;
+}
+
+.titleContainer {
+  background-color: transparent;
+  padding-inline: 7.5%;
+  padding-top: 2.5%;
+  padding-bottom: 7.5%;
+}
+
+.title {
+  font-weight: 900;
+  text-shadow: 0 5px 12px rgb(0 0 0 / 0.3);
+  padding: 0px;
+  font-size: 125px;
+  line-height: 105px;
+  color: white;
+}
+
+.content {
+  background-color: white;
+  padding-inline: 7.5%;
+  padding-block: 2.5%;
+}
+
+.itemContainer {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 20px;
+  row-gap: 20px;
+  width: 100%;
+  flex-wrap: wrap;
 }

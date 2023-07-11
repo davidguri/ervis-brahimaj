@@ -1,0 +1,13 @@
+.main {
+  color: white;
+  display: flex;
+  flex-direction: row !important;
+  align-items: center;
+}
+
+.leftContainer,
+.rightContainer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}

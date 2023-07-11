@@ -3,9 +3,8 @@
   background-color: white;
   width: 85%;
   padding-inline: 7.5%;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  margin-top: 5%;
+  padding-top: 7.5%;
+  padding-bottom: 7.5%;
 }
 
 .treatmentsSection {
@@ -21,6 +20,7 @@
   flex-direction: column;
   align-items: flex-start;
   width: 35%;
+  border: 1px solid red;
 }
 
 .title {
@@ -36,20 +36,13 @@
 
 .cardContainer {
   width: 50%;
+  border: 1px solid red;
 }
 
-.column {
-  float: left;
-  width: 47.5%;
-  margin: 10px;
-}
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-  justify-content: center;
-  align-items: center;
+.itemContainer {
+  display: grid;
+  grid-auto-flow: row;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 @media screen and (max-width: 600px) {

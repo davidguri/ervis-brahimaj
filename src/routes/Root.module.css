@@ -1,7 +1,7 @@
 .main {
   color: white;
   width: 100%;
-  height: 80vh;
+  height: 85vh;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -23,6 +23,7 @@
   align-items: center;
   justify-content: flex-end;
   padding-right: 7.5%;
+  height: 100%;
 }
 
 .titleContainer {
@@ -34,15 +35,18 @@
   font-weight: 900;
   text-shadow: 0 5px 12px rgb(0 0 0 / 0.3);
   padding: 0px;
-  font-size: 125px;
+  padding-bottom: 16px;
+  font-size: 100px;
+  line-height: 81px;
 }
 
 .smallerText {
-  font-size: min(max(6rem, 14vw), 75px);
+  font-size: 70px;
 }
 
 .subtitle {
-  font-size: 35px;
+  font-size: 32px;
+  line-height: 36px;
   font-weight: 800;
   text-shadow: 0 5px 12px rgb(0 0 0 / 0.3);
 }
@@ -101,7 +105,7 @@
 }
 
 .image {
-  width: 70%;
+  width: 75%;
   height: auto;
   margin: 0;
   padding: 0;
@@ -110,6 +114,7 @@
 @media screen and (max-width: 1500px) {
   .title {
     font-size: 75px;
+    line-height: 70px;
   }
 
   .ctaButton {
@@ -153,6 +158,7 @@
 
   .title {
     font-size: 64px;
+    line-height: 62px;
   }
 
   .subtitle {
