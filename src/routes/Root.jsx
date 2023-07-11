@@ -119,7 +119,9 @@ export default function Root() {
           <img src={Hero} alt="HeroImg" className={styles.image} />
         </div>
       </main>
-      <AboutSection />
+      <div id="about-section">
+        <AboutSection />
+      </div>
     </Layout>
   );
 }

@@ -14,7 +14,7 @@
 }
 
 .leftContainer {
-  padding-left: 7.5%;
+  padding-left: 15%;
 }
 
 .rightContainer {
@@ -22,7 +22,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: flex-end;
-  padding-right: 7.5%;
+  padding-right: 15%;
   height: 100%;
 }
 
@@ -105,7 +105,7 @@
 }
 
 .image {
-  width: 75%;
+  width: 95%;
   height: auto;
   margin: 0;
   padding: 0;
@@ -182,6 +182,12 @@
   }
 
   .image {
-    max-width: 49%;
+    width: 49%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .image {
+    width: 75%;
   }
 }

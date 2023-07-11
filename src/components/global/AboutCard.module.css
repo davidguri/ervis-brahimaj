@@ -1,13 +1,26 @@
-.main {
-  color: white;
+.cardContent {
   display: flex;
   flex-direction: row !important;
-  align-items: center;
+  width: 18vw;
 }
 
 .leftContainer,
 .rightContainer {
-  flex: 1;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+}
+
+.leftContainer {
+  width: 35%;
+}
+
+.rightContainer {
+  width: 65%;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 4px;
 }

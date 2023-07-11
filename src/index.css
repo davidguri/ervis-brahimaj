@@ -8,6 +8,7 @@ body {
   -ms-overflow-style: none;
   scrollbar-width: none;
   background-image: url(./assets/images/backgroundImg.png);
+  background-repeat: no-repeat;
 }
 
 html::-webkit-scrollbar {

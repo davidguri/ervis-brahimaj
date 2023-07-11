@@ -3,5 +3,11 @@
   background-color: rgb(154, 193, 196);
   box-shadow: 0 5px 12px rgb(0 0 0 / 0.3);
   border-radius: 25px;
-  padding: 20px;
+  padding: 15px;
+  transition: 1s;
+}
+
+.main:hover {
+  scale: 1.05;
+  cursor: pointer;
 }

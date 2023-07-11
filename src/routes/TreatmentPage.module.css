@@ -24,12 +24,3 @@
   padding-top: 7.5%;
   padding-bottom: 7.5%;
 }
-
-.itemContainer {
-  display: flex;
-  justify-content: space-between;
-  column-gap: 20px;
-  row-gap: 20px;
-  width: 100%;
-  flex-wrap: wrap;
-}

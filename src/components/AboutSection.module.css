@@ -1,10 +1,26 @@
 .main {
   color: black;
   background-color: white;
-  width: 85%;
-  padding-inline: 7.5%;
-  padding-top: 7.5%;
-  padding-bottom: 7.5%;
+  width: 70%;
+  padding-inline: 15%;
+}
+
+.aboutSection {
+  padding-top: 10%;
+  padding-bottom: 10%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.doctorSection {
+  padding-top: 10%;
+  padding-bottom: 10%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .treatmentsSection {
@@ -13,14 +29,16 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  padding-top: 10%;
+  padding-bottom: 10%;
 }
 
 .titleContainer {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  width: 35%;
-  border: 1px solid red;
+  align-items: flex-end;
+  text-align: right;
+  width: 32%;
 }
 
 .title {
@@ -32,17 +50,66 @@
 .paragraph {
   font-size: 21px;
   font-weight: 500;
+  line-height: 26px;
 }
 
 .cardContainer {
-  width: 50%;
-  border: 1px solid red;
+  width: 58%;
 }
 
 .itemContainer {
-  display: grid;
-  grid-auto-flow: row;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  row-gap: 20px;
+  column-gap: 20px;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.cardContent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 18vw;
+}
+
+.cardTitle {
+  font-size: 50px;
+  font-weight: 700;
+  margin-block: 25px;
+  color: black;
+}
+
+.leftContainer,
+.rightContainer {
+  width: 50%;
+}
+
+.rightContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
+  width: 32%;
+}
+
+.image {
+  width: 100%;
+  border-radius: 25px;
+}
+
+.leftDoctorContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  width: 32%;
+}
+
+.rightDoctorContainer {
+  width: 50%;
 }
 
 @media screen and (max-width: 600px) {
@@ -65,18 +132,30 @@
     margin-bottom: 20px;
   }
 
+  .rightContainer {
+    text-align: center;
+    width: 95%;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
   .cardContainer {
     width: 100%;
   }
 }
 
 @media screen and (max-width: 1900px) {
-  .column {
-    width: 100%;
-  }
-
   .titleContainer {
     align-items: center;
     text-align: center;
+  }
+
+  .itemContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    row-gap: 20px;
+    width: 100%;
+    flex-wrap: nowrap;
   }
 }

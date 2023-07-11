@@ -1,28 +1,32 @@
 import styles from "./AboutCard.module.css";
 import Card from "./Card";
 
+import { Link } from "react-router-dom";
+
 export default function AboutCard(props) {
   return (
-    <main className={styles.main}>
+    <Link to={props.link}>
       <Card>
-        <div className={styles.leftContainer}>
+        <div className={styles.cardContent}>
           <img
             src={props.icon}
-            alt="f u mississauga foot clinic"
+            alt="icon"
             style={{
-              width: "15%",
+              width: "12%",
               backgroundColor: "#fff",
-              padding: 18,
-              borderRadius: 25,
-              borderWidth: 1,
+              padding: 21,
+              borderRadius: 20,
+              borderWidth: 0.1,
+              borderColor: "transparent",
+              marginRight: 15,
             }}
           />
-        </div>
-        <div className={styles.rightContainer}>
-          <text className={styles.cardTitle}>{props.title}</text>
-          <text className={styles.cardContent}>{props.content}</text>
+          <div className={styles.rightContainer}>
+            <text className={styles.title}>{props.title}</text>
+            <text className={styles.content}>{props.content}</text>
+          </div>
         </div>
       </Card>
-    </main>
+    </Link>
   );
 }

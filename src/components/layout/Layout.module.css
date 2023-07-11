@@ -19,10 +19,10 @@
   flex-direction: row;
   align-items: center;
   background-color: rgb(154, 193, 196);
-  padding-top: 0.4%;
-  padding-bottom: 0.4%;
-  padding-left: 7.5%;
-  padding-right: 7.5%;
+  padding-top: 0.275%;
+  padding-bottom: 0.275%;
+  padding-left: 15%;
+  padding-right: 15%;
 }
 
 .leftContainer {
@@ -49,7 +49,6 @@
 }
 
 .numberContainer {
-  margin-right: 8px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -78,8 +77,8 @@ a {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding-left: 7.5%;
-  padding-right: 7.5%;
+  padding-left: 15%;
+  padding-right: 15%;
   margin-top: 1.25%;
   margin-bottom: 1.25%;
 }
@@ -121,19 +120,39 @@ a {
   color: black;
 }
 
+.logoContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .logo {
-  height: 85px;
+  height: 7.5vh;
   width: auto;
   margin: 0;
   padding: 0;
 }
 
+.logo {
+  height: 9vh;
+  width: auto;
+  margin: 0;
+  padding: 0;
+}
+
+.motto {
+  padding-top: 10%;
+  font-size: 20px;
+  font-weight: 900;
+}
+
 .footer {
   background-color: rgb(154, 193, 196);
-  padding-left: 7.5%;
-  padding-right: 7.5%;
-  padding-top: 2%;
-  padding-bottom: 2%;
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-top: 5%;
+  padding-bottom: 5%;
   display: flex;
   flex-direction: column;
 }
@@ -147,6 +166,7 @@ a {
 .linkColumn {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   margin-left: 3vw;
 }
 
@@ -179,10 +199,10 @@ a {
 .legal {
   background-color: black;
   color: white;
-  padding-left: 7.5%;
-  padding-right: 7.5%;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-top: 8px;
+  padding-bottom: 8px;
   text-align: center;
 }
 

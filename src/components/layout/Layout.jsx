@@ -2,13 +2,13 @@ import { gsap } from "gsap";
 import styles from "./Layout.module.css";
 import { Link } from "react-router-dom";
 
+import { IoLocationSharp } from "react-icons/io5";
 import {
-  IoLocationSharp,
-  IoLogoInstagram,
-  IoLogoFacebook,
-  IoLogoLinkedin,
-  IoCall,
-} from "react-icons/io5";
+  RiLinkedinBoxFill,
+  RiFacebookBoxFill,
+  RiInstagramFill,
+  RiPhoneFill,
+} from "react-icons/ri";
 import { IconContext } from "react-icons";
 
 import Logo from "../../assets/images/Ervis Brahimaj Logo Dark.png";
@@ -48,32 +48,30 @@ export default function Layout(props) {
             </a>
           </div>
           <div className={styles.rightContainer}>
+            <a href="tel:+355695271172" className={styles.numberContainer}>
+              <IconContext.Provider value={{ size: 20, color: "#000000" }}>
+                <RiPhoneFill />
+              </IconContext.Provider>
+              <text className={styles.contactText}>+355 69 420 6969</text>
+            </a>
             <div className={styles.iconContainer}>
               <IconContext.Provider
                 value={{
-                  size: 20,
-                  style: { paddingRight: 12 },
+                  size: 23,
+                  style: { paddingLeft: 12 },
                   color: "#000000",
                 }}
               >
                 <a href="https://instagram.com/">
-                  <IoLogoInstagram />
+                  <RiInstagramFill />
                 </a>
                 <a href="https://facebook.com/">
-                  <IoLogoFacebook />
+                  <RiFacebookBoxFill />
                 </a>
                 <a href="https://linkedin.com/">
-                  <IoLogoLinkedin />
+                  <RiLinkedinBoxFill />
                 </a>
               </IconContext.Provider>
-            </div>
-            <div className={styles.numberContainer}>
-              <a href="tel:+355695271172" className={styles.numberContainer}>
-                <IconContext.Provider value={{ size: 20, color: "#000000" }}>
-                  <IoCall />
-                </IconContext.Provider>
-                <p className={styles.contactText}>+355 69 420 6969</p>
-              </a>
             </div>
           </div>
         </section>
@@ -120,116 +118,117 @@ export default function Layout(props) {
           <div className={styles.leftContainer}>
             <div className={styles.logoContainer}>
               <Link to="/">
-                <img src={Logo} alt={"logo"} className={styles.logo} />
+                <img src={Logo} alt={"logo"} className={styles.footerLogo} />
               </Link>
             </div>
           </div>
           <div className={styles.rightContainer}>
             <div className={styles.linkContainer}>
               <div className={styles.linkColumn}>
-                <p className={styles.columnTitle}>Title</p>
+                <text className={styles.columnTitle}>Explore</text>
+                {/* Point to id's within the same page */}
                 <Link
-                  to="/about"
+                  to="/"
                   className={styles.columnLink}
                   onMouseEnter={onEnterLink}
                   onMouseLeave={onLeaveLink}
                 >
-                  About
+                  Home
                 </Link>
                 <Link
-                  to="/about"
+                  to="/treatments"
                   className={styles.columnLink}
                   onMouseEnter={onEnterLink}
                   onMouseLeave={onLeaveLink}
                 >
-                  About
+                  Treatmets
                 </Link>
                 <Link
-                  to="/about"
+                  to="/faq"
                   className={styles.columnLink}
                   onMouseEnter={onEnterLink}
                   onMouseLeave={onLeaveLink}
                 >
-                  About
-                </Link>
-                <Link
-                  to="/about"
-                  className={styles.columnLink}
-                  onMouseEnter={onEnterLink}
-                  onMouseLeave={onLeaveLink}
-                >
-                  About
+                  Faq
                 </Link>
               </div>
               <div className={styles.linkColumn}>
-                <p className={styles.columnTitle}>Title</p>
+                <text className={styles.columnTitle}>Treatments</text>
                 <Link
-                  to="/about"
+                  to="/"
                   className={styles.columnLink}
                   onMouseEnter={onEnterLink}
                   onMouseLeave={onLeaveLink}
                 >
-                  About
+                  Lorem Ipsum
                 </Link>
                 <Link
-                  to="/about"
+                  to="/"
                   className={styles.columnLink}
                   onMouseEnter={onEnterLink}
                   onMouseLeave={onLeaveLink}
                 >
-                  About
+                  Ipsum Dolor
                 </Link>
                 <Link
-                  to="/about"
+                  to="/"
                   className={styles.columnLink}
                   onMouseEnter={onEnterLink}
                   onMouseLeave={onLeaveLink}
                 >
-                  About
+                  Dolor Sit
                 </Link>
                 <Link
-                  to="/about"
+                  to="/"
                   className={styles.columnLink}
                   onMouseEnter={onEnterLink}
                   onMouseLeave={onLeaveLink}
                 >
-                  About
+                  Sit Amet
+                </Link>
+                <Link
+                  to="/"
+                  className={styles.columnLink}
+                  onMouseEnter={onEnterLink}
+                  onMouseLeave={onLeaveLink}
+                >
+                  Amet Lorem
                 </Link>
               </div>
               <div className={styles.linkColumn}>
-                <p className={styles.columnTitle}>Title</p>
-                <Link
-                  to="/about"
+                <text className={styles.columnTitle}>Contact</text>
+                <a
+                  href="tel:355695271172" // change this phone number
                   className={styles.columnLink}
                   onMouseEnter={onEnterLink}
                   onMouseLeave={onLeaveLink}
                 >
-                  About
-                </Link>
-                <Link
-                  to="/about"
+                  Phone
+                </a>
+                <a
+                  href="https://www.facebook.com/"
                   className={styles.columnLink}
                   onMouseEnter={onEnterLink}
                   onMouseLeave={onLeaveLink}
                 >
-                  About
-                </Link>
-                <Link
-                  to="/about"
+                  Facebook
+                </a>
+                <a
+                  href="https://www.instagram.com/"
                   className={styles.columnLink}
                   onMouseEnter={onEnterLink}
                   onMouseLeave={onLeaveLink}
                 >
-                  About
-                </Link>
-                <Link
-                  to="/about"
+                  Instagram
+                </a>
+                <a
+                  href="https://www.linkedin.com/"
                   className={styles.columnLink}
                   onMouseEnter={onEnterLink}
                   onMouseLeave={onLeaveLink}
                 >
-                  About
-                </Link>
+                  LinkedIn
+                </a>
               </div>
             </div>
           </div>
