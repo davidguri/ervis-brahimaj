@@ -15,19 +15,28 @@ export default function ErrorPage() {
         flexDirection: "column",
         justifyContent: "center",
         alignItems: "center",
+        textAlign: "center",
       }}
     >
       <h1
         style={{
-          fontSize: 175,
+          fontSize: 150,
           fontWeight: "900",
           color: "white",
           marginBottom: 20,
+          textAlign: "center",
         }}
       >
         Oops!
       </h1>
-      <p style={{ color: "white", fontSize: 45, fontWeight: "500" }}>
+      <p
+        style={{
+          color: "white",
+          fontSize: 40,
+          fontWeight: "500",
+          textAlign: "center",
+        }}
+      >
         Sorry, an unexpected error has occurred.
       </p>
       <p>
@@ -37,6 +46,7 @@ export default function ErrorPage() {
             marginBottom: 20,
             fontSize: 45,
             fontWeight: "500",
+            textAlign: "center",
           }}
         >
           {error.statusText || error.message}
@@ -52,6 +62,7 @@ export default function ErrorPage() {
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
+          textAlign: "center",
         }}
         onClick={() => navigate("/")}
       >
@@ -62,6 +73,7 @@ export default function ErrorPage() {
             textDecoration: "none",
             padding: 0,
             margin: 0,
+            textAlign: "center",
           }}
         >
           Go Back

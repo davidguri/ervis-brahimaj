@@ -70,7 +70,7 @@
 .cardContent {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: baseline;
   justify-content: center;
   width: 18vw;
 }
@@ -158,5 +158,75 @@
     row-gap: 20px;
     width: 100%;
     flex-wrap: nowrap;
+  }
+
+  .aboutSection {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .doctorSection {
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+  }
+
+  .treatmentsSection {
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 12%;
+    padding-bottom: 12%;
+  }
+
+  .titleContainer {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .cardContainer {
+    width: 100%;
+  }
+
+  .leftDoctorContainer {
+    margin-top: 30px;
+    text-align: center;
+    width: 100%;
+    align-items: center;
+  }
+
+  .rightDoctorContainer {
+    width: 100%;
+    text-align: center;
+  }
+
+  .leftContainer,
+  .rightContainer {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+  }
+
+  .rightContainer {
+    text-align: center;
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  .title {
+    font-weight: 800;
+    font-size: 68px;
+    padding-bottom: 25px;
+    text-align: center;
+  }
+
+  .cardContent {
+    width: 100%;
   }
 }

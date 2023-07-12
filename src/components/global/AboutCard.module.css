@@ -29,3 +29,15 @@
   scale: 1.05;
   cursor: pointer;
 }
+
+@media screen and (max-width: 1900px) {
+  .cardContent {
+    display: flex;
+    flex-direction: row !important;
+    width: 100%;
+  }
+
+  .rightContainer {
+    width: 65%;
+  }
+}

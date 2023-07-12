@@ -17,3 +17,10 @@
 .content {
   font-size: 18px;
 }
+
+@media screen and (max-width: 1900px) {
+  .main {
+    width: 100%;
+    padding-inline: 0;
+  }
+}

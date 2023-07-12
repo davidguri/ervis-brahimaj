@@ -227,14 +227,4 @@ a {
     font-size: 14px;
     font-weight: 600;
   }
-
-  .horizontalStuff {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .footer {
-    width: 100%;
-  }
 }
