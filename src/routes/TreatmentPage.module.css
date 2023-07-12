@@ -14,7 +14,6 @@
   text-shadow: 0 5px 12px rgb(0 0 0 / 0.3);
   padding: 0px;
   font-size: 125px;
-  line-height: 105px;
   color: white;
 }
 
@@ -136,4 +135,18 @@
   font-size: 14px;
   font-weight: 700;
   color: black;
+}
+
+@media screen and (max-width: 1900px) {
+  .title {
+    font-size: 64px;
+  }
+
+  .titleContainer {
+    padding-inline: 10%;
+  }
+
+  .content {
+    padding-inline: 10%;
+  }
 }

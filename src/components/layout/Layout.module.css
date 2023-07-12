@@ -227,4 +227,14 @@ a {
     font-size: 14px;
     font-weight: 600;
   }
+
+  .contactBar {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  .navigationBar {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
 }

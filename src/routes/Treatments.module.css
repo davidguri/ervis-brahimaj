@@ -39,4 +39,12 @@
   .title {
     font-size: 64px;
   }
+
+  .titleContainer {
+    padding-inline: 10%;
+  }
+
+  .content {
+    padding-inline: 10%;
+  }
 }
