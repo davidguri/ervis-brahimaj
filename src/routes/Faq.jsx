@@ -1,6 +1,8 @@
 import styles from "./Faq.module.css";
 import Layout from "../components/layout/Layout";
 
+import { Fade } from "react-reveal";
+
 import FaqContainer from "../components/global/faqContainer";
 
 export default function Faq() {
@@ -56,16 +58,20 @@ export default function Faq() {
   return (
     <Layout>
       <main className={styles.main}>
-        <section className={styles.titleContainer}>
-          <text className={styles.title}>FAQ</text>
-        </section>
+        <Fade delay={500} duration={1250}>
+          <section className={styles.titleContainer}>
+            <text className={styles.title}>FAQ</text>
+          </section>
+        </Fade>
         <section className={styles.content}>
           <div className={styles.itemContainer}>
             {faqs.map((faqs, i) => {
               return (
-                <div key={i}>
-                  <FaqContainer title={faqs.title} content={faqs.content} />
-                </div>
+                <Fade top delay={800} duration={1200} key={i}>
+                  <div>
+                    <FaqContainer title={faqs.title} content={faqs.content} />
+                  </div>
+                </Fade>
               );
             })}
           </div>

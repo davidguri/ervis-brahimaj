@@ -21,6 +21,119 @@
 .content {
   background-color: white;
   padding-inline: 15%;
-  padding-top: 7.5%;
-  padding-bottom: 7.5%;
+}
+
+.descriptionContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10%;
+  padding-bottom: 5%;
+}
+
+.imageContainer {
+  width: 48%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.description {
+  font-size: 21px;
+  width: 36%;
+}
+
+.descriptionImage {
+  box-shadow: 0 5px 12px rgb(0 0 0 / 0.3);
+  border-radius: 20px;
+  width: 100%;
+}
+
+.detailsContainer {
+  padding-top: 5%;
+  padding-bottom: 10%;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.horizontalContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: space-between;
+  justify-content: space-between;
+}
+
+.verticalContainer {
+  padding-bottom: 26px;
+}
+
+.leftContainer,
+.middleContainer,
+.rightContainer {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.cardTitleContainer {
+  margin-bottom: 26px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.cardTitle {
+  font-size: 32px;
+  font-weight: 800;
+}
+
+.cardSubtitle {
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.cardDescription {
+  font-size: 18px;
+  font-weight: 500;
+  width: 80%;
+}
+
+.iconContainer {
+  background-color: white;
+  border-radius: 18px;
+  padding-block: 10px;
+  padding-inline: 12px;
+  margin-right: 10px;
+}
+
+.relatedLinks {
+  margin-top: 35px;
+  padding-inline: 25px;
+  display: flex;
+  flex-direction: row;
+}
+
+.relatedText {
+  padding-right: 10px;
+}
+
+.relatedLink {
+  background-color: rgb(154, 193, 196);
+  padding: 15px;
+  margin: 8px;
+  border-radius: 20px;
+  box-shadow: 0 5px 12px rgb(0 0 0 / 0.3);
+}
+
+.linkText {
+  font-size: 14px;
+  font-weight: 700;
+  color: black;
 }

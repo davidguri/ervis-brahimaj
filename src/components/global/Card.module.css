@@ -6,8 +6,3 @@
   padding: 15px;
   transition: 1s;
 }
-
-.main:hover {
-  scale: 1.05;
-  cursor: pointer;
-}

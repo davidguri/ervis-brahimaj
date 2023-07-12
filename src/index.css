@@ -9,6 +9,7 @@ body {
   scrollbar-width: none;
   background-image: url(./assets/images/backgroundImg.png);
   background-repeat: no-repeat;
+  scroll-behavior: smooth;
 }
 
 html::-webkit-scrollbar {

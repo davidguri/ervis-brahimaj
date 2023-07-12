@@ -3,6 +3,8 @@ import Layout from "../components/layout/Layout";
 
 import AboutCard from "../components/global/AboutCard";
 
+import { Fade } from "react-reveal";
+
 export default function Treatments() {
   const treatments = [
     // Dummy Data
@@ -83,9 +85,11 @@ export default function Treatments() {
   return (
     <Layout>
       <main className={styles.main} id="main">
-        <section className={styles.titleContainer}>
-          <text className={styles.title}>Treatments</text>
-        </section>
+        <Fade delay={500} duration={1250}>
+          <section className={styles.titleContainer}>
+            <text className={styles.title}>Treatments</text>
+          </section>
+        </Fade>
         <section className={styles.content}>
           <div className={styles.itemContainer}>
             {treatments.map((treatments, i) => {

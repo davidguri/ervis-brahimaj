@@ -24,3 +24,8 @@
   font-weight: 700;
   margin-bottom: 4px;
 }
+
+.wrapper:hover {
+  scale: 1.05;
+  cursor: pointer;
+}

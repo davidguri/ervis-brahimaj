@@ -134,17 +134,11 @@ a {
   padding: 0;
 }
 
-.logo {
-  height: 9vh;
+.footerLogo {
+  height: 11vh;
   width: auto;
   margin: 0;
   padding: 0;
-}
-
-.motto {
-  padding-top: 10%;
-  font-size: 20px;
-  font-weight: 900;
 }
 
 .footer {
@@ -190,10 +184,6 @@ a {
   display: flex;
   flex-direction: row;
   align-items: center;
-}
-
-.aboutContainer {
-  margin-top: 35px;
 }
 
 .legal {
