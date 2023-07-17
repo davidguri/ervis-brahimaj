@@ -19,7 +19,7 @@ export default function TreatmentPage(props) {
       <main className={styles.main}>
         <Fade delay={500} duration={1250}>
           <div className={styles.titleContainer}>
-            <text className={styles.title}>Spinal Abnormalities</text>
+            <text className={styles.title}>Spinal Issues</text>
           </div>
         </Fade>
         <section className={styles.content}>

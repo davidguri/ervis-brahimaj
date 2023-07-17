@@ -126,7 +126,6 @@ export default function Layout(props) {
       <div className={styles.legal}>
         <text className={styles.legalText}>Legal Copyright Stuff &#169;</text>
       </div>
-      <style></style>
     </main>
   );
 }
