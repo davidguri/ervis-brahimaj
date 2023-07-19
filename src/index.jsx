@@ -6,6 +6,7 @@ import Root from "./routes/Root";
 import Treatments from "./routes/Treatments";
 import Faq from "./routes/Faq";
 import TreatmentPage from "./routes/TreatmentPage";
+import Appointment from "./routes/Appointment";
 
 import ErrorPage from "./error-page";
 
@@ -34,6 +35,10 @@ const router = createBrowserRouter([
   {
     path: "/treatments/page",
     element: <TreatmentPage />,
+  },
+  {
+    path: "/appointments",
+    element: <Appointment />,
   },
 ]);
 

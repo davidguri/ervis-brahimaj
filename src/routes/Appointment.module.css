@@ -1,0 +1,105 @@
+.main {
+  color: black;
+}
+
+.titleContainer {
+  background-color: transparent;
+  padding-inline: 15%;
+  padding-top: 2.5%;
+  padding-bottom: 7.5%;
+}
+
+.title {
+  font-weight: 900;
+  text-shadow: 0 5px 12px rgb(0 0 0 / 0.3);
+  padding: 0px;
+  font-size: 125px;
+  line-height: 105px;
+  color: white;
+}
+
+.content {
+  background-color: white;
+  padding-inline: 15%;
+  padding-top: 7.5%;
+  padding-bottom: 7.5%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.form {
+  width: 35%;
+}
+
+.formContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border: 5px solid rgb(154, 193, 196);
+  padding: 18px;
+  border-radius: 25px;
+  margin-block: 20px;
+}
+
+.formTitle {
+  font-size: 20px;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+  color: black;
+}
+
+.imageContainer {
+  width: 50%;
+}
+
+.image {
+  width: 100%;
+  border-radius: 25px;
+  box-shadow: 0 5px 12px rgb(0 0 0 / 0.3);
+}
+
+.item {
+  font-size: 20px;
+  font-weight: 700;
+  padding: 20px;
+}
+
+.item:hover {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1900px) {
+  .title {
+    font-size: 60px;
+  }
+
+  .titleContainer {
+    padding-inline: 10%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .form {
+    width: 100%;
+  }
+
+  .imageContainer {
+    width: 100%;
+  }
+
+  .content {
+    background-color: white;
+    padding-inline: 10%;
+    padding-top: 7.5%;
+    padding-bottom: 7.5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
